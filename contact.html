@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<!---headテンプレート--->
+	<link rel="icon" type="image/png" href="images/document.png">
+	<meta charset="utf-8">
+	<title>上手に痩せるコツ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!---課題規定--->
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="description" content="これはHTMLCSS の課題作品です。">
+	<!---CSSリセット規定--->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<!---グーグルフォント規定--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Kurenaido&display=swap"
+		rel="stylesheet">
+	<!---フォントオーサム規定--->
+	<link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+	<!---ファビコン規定--->
+	<link rel="icon" type="image/png" href="images/document.png">
+	<!---CSS抽出規定--->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="overlay">
+		<input type="checkbox" id="overlay-input" style="display: none;">
+		<label for="overlay-input" id="overlay-button"><span></span></label>
+		<div id="overlay">
+			<ul>
+				<li><a href="homeostasis.html">ホメオスタシスを理解する</a></li>
+				<li><a href="mechanism.html">痩せるメカニズムを知る</a></li>
+				<li><a href="#">どんな体形になりたいかを想定する</a></li>
+				<li><a href="#">無酸素運動と有酸素運動を理解する</a></li>
+				<li><a href="#">食事制限はなるべくせずに食を見直す</a></li>
+			</ul>
+		</div>
+		<div id="contact">
+			<header class="page-header">
+				<h1><a href="index.html"><img class="logo" src="images/logo.png" alt="TM traning"></a></h1>
+				<nav>
+					<ul class="main-nav">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="regist.html">SIGNUP</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="wrapper">
+				<div class="form-bg">
+					<h2 class="page-title">ACCESS</h2>
+					<div class="box_con06">
+						<form method="post" action="mail.php">
+							<ul class="formTable">
+								<li>
+									<p class="title"><em>性別</em></p>
+									<div class="box_det">
+										<div class="box_br">
+											<label>
+												<input type="radio" name="gender" value="male">
+												男性
+											</label>
+										</div>
+										<div class="box_br">
+											<label>
+												<input type="radio" name="gender" value="female">
+												女性
+											</label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<p class="title"><em>ご用件</em></p>
+									<div class="box_det"><select name="ご用件">
+											<option value="">選択してください</option>
+											<option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+											<option value="リンクについて">リンクについて</option>
+										</select></div>
+								</li>
+								<li>
+									<p class="title"><em>お名前<span>必須</span></em></p>
+									<div class="box_det"><input size="20" type="text" class="wide" name="お名前" /></div>
+								</li>
+								<li>
+									<p class="title"><em>電話番号（半角）<span>必須</span></em></p>
+									<div class="box_det"><input size="30" type="text" class="wide" name="電話番号" /></div>
+								</li>
+								<li>
+									<p class="title"><em>Mail（半角）</em></p>
+									<div class="box_det"><input size="30" type="text" class="wide" name="Email" /></div>
+								</li>
+								<li>
+									<p class="title"><em>お問い合わせ内容</em></p>
+									<div class="box_det"><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></div>
+								</li>
+							</ul>
+							<div class="con_pri">
+								<div class="box_pri">
+									<div class="box_tori">
+										<h4>第1条（個人情報）</h4>
+										<p class="txt">
+											「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
+										</p>
+									</div>
+									<div class="box_num">
+										<h4>第2条（個人情報の収集方法）</h4>
+										<p class="txt">
+											当社は，ユーザーが利用登録をする際に氏名，生年月日，住所，電話番号，メールアドレス，銀行口座番号，クレジットカード番号，運転免許証番号などの個人情報をお尋ねすることがあります。また，ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を,当社の提携先（情報提供元，広告主，広告配信先などを含みます。以下，｢提携先｣といいます。）などから収集することがあります。
+										</p>
+									</div>
+									<div class="box_num">
+										<h4>第3条（個人情報を収集・利用する目的）</h4>
+										<p class="txt">当社が個人情報を収集・利用する目的は，以下のとおりです。<br><br>
+											・当社サービスの提供・運営のため<br>
+											・ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）<br>
+											・ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため<br>
+											・メンテナンス，重要なお知らせなど必要に応じたご連絡のため<br>
+											・利用規約に違反したユーザーや，不正・不当な目的でサービスを利用しようとするユーザーの特定をし，ご利用をお断りするため<br>
+											・ユーザーにご自身の登録情報の閲覧や変更，削除，ご利用状況の閲覧を行っていただくため<br>
+											・有料サービスにおいて，ユーザーに利用料金を請求するため<br>
+											・上記の利用目的に付随する目的</p>
+									</div>
+									<div class="box_num">
+										<h4>第4条（利用目的の変更）</h4>
+										<p class="txt">・当社は，利用目的が変更前と関連性を有すると合理的に認められる場合に限り，個人情報の利用目的を変更するものとします。<br>
+											・利用目的の変更を行った場合には，変更後の目的について，当社所定の方法により，ユーザーに通知し，または本ウェブサイト上に公表するものとします。</p>
+									</div>
+									<div class="box_num">
+										<h4>第5条（個人情報の第三者提供）</h4>
+										<p class="txt">
+											・当社は，次に掲げる場合を除いて，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。ただし，個人情報保護法その他の法令で認められる場合を除きます。<br><br>
+											・人の生命，身体または財産の保護のために必要がある場合であって，本人の同意を得ることが困難であるとき<br>
+											・公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって，本人の同意を得ることが困難であるとき<br>
+											・国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって，本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき<br>
+											・予め次の事項を告知あるいは公表し，かつ当社が個人情報保護委員会に届出をしたとき<br><br>
+											・利用目的に第三者への提供を含むこと<br>
+											・第三者に提供されるデータの項目<br>
+											・第三者への提供の手段または方法<br>
+											・本人の求めに応じて個人情報の第三者への提供を停止すること<br><br>
+											・前項の定めにかかわらず，次に掲げる場合には，当該情報の提供先は第三者に該当しないものとします。<br><br>
+											・当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合<br>
+											・合併その他の事由による事業の承継に伴って個人情報が提供される場合<br>
+											・個人情報を特定の者との間で共同して利用する場合であって，その旨並びに共同して利用される個人情報の項目，共同して利用する者の範囲，利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称について，あらかじめ本人に通知し，または本人が容易に知り得る状態に置いた場合
+										</p><br>
+									</div>
+									<div class="box_num">
+										<h4>第6条（個人情報の開示）</h4>
+										<p class="txt">
+											当社は、本人から個人情報の開示を求められたときは、本人に対し、遅滞なくこれを開示します。ただし，開示することにより次のいずれかに該当する場合は，その全部または一部を開示しないこともあり，開示しない決定をした場合には，その旨を遅滞なく通知します。なお，個人情報の開示に際しては，1件あたり1，000円の手数料を申し受けます。<br><br>
+											・本人または第三者の生命，身体，財産その他の権利利益を害するおそれがある場合<br>
+											・当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合<br>
+											・その他法令に違反することとなる場合<br><br>
+											前項の定めにかかわらず，履歴情報および特性情報などの個人情報以外の情報については，原則として開示いたしません。</p>
+									</div>
+									<div class="box_num">
+										<h4>第7条（個人情報の訂正および削除）</h4>
+										<p class="txt">
+											・ユーザーは，当社の保有する自己の個人情報が誤った情報である場合には，当社が定める手続きにより，当社に対して個人情報の訂正，追加または削除（以下，「訂正等」といいます。）を請求することができます。<br>
+											・当社は，ユーザーから前項の請求を受けてその請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の訂正等を行うものとします。<br>
+											・当社は，前項の規定に基づき訂正等を行った場合，または訂正等を行わない旨の決定をしたときは遅滞なく，これをユーザーに通知します。</p>
+									</div>
+									<div class="box_num">
+										<h4>第8条（個人情報の利用停止等）</h4>
+										<p class="txt">
+											・当社は，本人から，個人情報が，利用目的の範囲を超えて取り扱われているという理由，または不正の手段により取得されたものであるという理由により，その利用の停止または消去（以下，「利用停止等」といいます。）を求められた場合には，遅滞なく必要な調査を行います。<br>
+											・前項の調査結果に基づき，その請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の利用停止等を行います。<br>
+											・当社は，前項の規定に基づき利用停止等を行った場合，または利用停止等を行わない旨の決定をしたときは，遅滞なく，これをユーザーに通知します。<br>
+											・前2項にかかわらず，利用停止等に多額の費用を有する場合その他利用停止等を行うことが困難な場合であって，ユーザーの権利利益を保護するために必要なこれに代わるべき措置をとれる場合は，この代替策を講じるものとします。
+										</p>
+									</div>
+									<div class="box_num">
+										<h4>第9条（プライバシーポリシーの変更）</h4>
+										<p class="txt">・本ポリシーの内容は，法令その他本ポリシーに別段の定めのある事項を除いて，ユーザーに通知することなく，変更することができるものとします。<br>
+											・当社が別途定める場合を除いて，変更後のプライバシーポリシーは，本ウェブサイトに掲載したときから効力を生じるものとします。</p>
+									</div>
+								</div>
+							</div>
+							<div class="box_check">
+								<label>
+									<input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span
+										class="check">プライバシーポリシーに同意する</span>
+								</label>
+							</div>
+							<p class="btn">
+								<span><input type="submit" value="　 確認 　" /></span>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<section id="sns">
+				<div class="wrapper">
+					<div class="sns-box">
+						<h6 class="sub-title">Facebook</h6>
+						Facebookプラグイン
+					</div>
+					<div class="sns-box">
+						<h6 class="sub-title">twitter</h6>
+						Twitterプラグイン
+					</div>
+					<div class="sns-box">
+						<h6 class="sub-title">YouTube</h6>
+						YouTube動画
+					</div>
+				</div>
+			</section>
+			<section id="location">
+				<div class="wrapper">
+					<div class="location-info">
+						<h6 class="sub-title">施設情報</h6>
+						<p>
+							郵便番号：〒530-0001<br>
+							住開：大阪府大阪市北区梅田３丁目１−１<br>
+							電話：06-〇〇〇-△△△<br>
+							開業時間：10:00~22:00<br>
+							休日：年中無休
+						</p>
+					</div>
+					<div class="location-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.10682851413!2d135.49337567574455!3d34.70248537291905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d95e3a70b%3A0x1baec822e859c84a!2z5aSn6Ziq6aeF!5e0!3m2!1sja!2sjp!4v1692716839226!5m2!1sja!2sjp"
+							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<p>&copy: 2023 TM traning</p>
+		</footer>
+	</div>
+</body>
+
+</html>
